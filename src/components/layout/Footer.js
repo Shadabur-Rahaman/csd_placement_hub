@@ -115,8 +115,7 @@ const Footer = () => {
               {[
                 "Department of Computer Science & Design",
                 "PESITM, Shivamogga",
-                "Email: info@pesitm.edu",
-                "Phone: +91 1234567890"
+                "Email: info@pesitm.edu"
               ].map((item, index) => (
                 <li 
                   key={index}
