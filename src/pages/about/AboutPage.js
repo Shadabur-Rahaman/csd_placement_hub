@@ -192,7 +192,7 @@ const AboutPage = () => {
                 Dr. Pramod
               </h3>
               <p className="text-cyan-500 mb-3">Professor & HOD</p>
-              <p className="text-sm text-gray-400 mb-4">Ph.D. in Computer Science</p>
+              <p className="text-sm text-gray-400 mb-4">Ph.D. (23 Years Experience)</p>
               <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
               <p className="text-sm text-gray-500">
                 <span className="block">Email: hodcsd@pestrust.edu.in</span>
@@ -214,7 +214,7 @@ const AboutPage = () => {
                   : 'bg-gradient-to-r from-violet-400 to-cyan-400 text-transparent bg-clip-text'
               }`}>Mrs. Ayisha Khanum</h3>
               <p className="text-cyan-500 mb-3">Assistant Professor</p>
-              <p className="text-sm text-gray-400 mb-4">M.Tech in Computer Science</p>
+              <p className="text-sm text-gray-400 mb-4">B.E, M.Tech (9 Years Experience)</p>
               <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
               <p className="text-sm text-gray-500">
                 <span className="block">Email: ayisha.khanum@pestrust.edu.in</span>
@@ -236,7 +236,7 @@ const AboutPage = () => {
                   : 'bg-gradient-to-r from-violet-400 to-cyan-400 text-transparent bg-clip-text'
               }`}>Mr. Manjunatha G</h3>
               <p className="text-cyan-500 mb-3">Assistant Professor</p>
-              <p className="text-sm text-gray-400 mb-4">M.Tech in Computer Science</p>
+              <p className="text-sm text-gray-400 mb-4">DEC, B.E, M.Tech (10 Years Experience)</p>
               <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
               <p className="text-sm text-gray-500">
                 <span className="block">Email: manjunatha.g@pestrust.edu.in</span>
@@ -258,7 +258,7 @@ const AboutPage = () => {
                   : 'bg-gradient-to-r from-violet-400 to-cyan-400 text-transparent bg-clip-text'
               }`}>Mrs. Kavya S</h3>
               <p className="text-cyan-500 mb-3">Assistant Professor</p>
-              <p className="text-sm text-gray-400 mb-4">M.Tech in Computer Science</p>
+              <p className="text-sm text-gray-400 mb-4">B.E, M.Tech (10 Years Experience)</p>
               <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
               <p className="text-sm text-gray-500">
                 <span className="block">Email: kavya.s@pestrust.edu.in</span>
@@ -280,7 +280,7 @@ const AboutPage = () => {
                   : 'bg-gradient-to-r from-violet-400 to-cyan-400 text-transparent bg-clip-text'
               }`}>Mr. Harish M</h3>
               <p className="text-cyan-500 mb-3">Assistant Professor</p>
-              <p className="text-sm text-gray-400 mb-4">M.Tech in Computer Science</p>
+              <p className="text-sm text-gray-400 mb-4">B.E, M.Tech (10 Years Experience)</p>
               <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
               <p className="text-sm text-gray-500">
                 <span className="block">Email: harish.m@pestrust.edu.in</span>
@@ -302,7 +302,6 @@ const AboutPage = () => {
                   : 'bg-gradient-to-r from-amber-400 to-yellow-400 text-transparent bg-clip-text'
               }`}>Mr. Shivakumar S V</h3>
               <p className="text-amber-500 mb-3">Lab Instructor</p>
-              <p className="text-sm text-gray-400 mb-4">M.Tech in Computer Science</p>
               <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
               <p className="text-sm text-gray-500">
                 <span className="block">Email: shivakumar.sv@pestrust.edu.in</span>
