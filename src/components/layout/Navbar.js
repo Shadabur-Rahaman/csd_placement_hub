@@ -68,8 +68,7 @@ const Navbar = () => {
     { name: 'About', icon: UserGroupIcon, path: '/about' },
     { name: 'Placements', icon: AcademicCapIcon, path: 'https://staging-student-visual-tool-amti.frontend.encr.app' },
     { name: 'Resume Analyzer', icon: UserIcon, path: 'https://screenify-two.vercel.app/' },
-    { name: 'Interview Prep', icon: CalendarIcon, path: 'https://interview-prep-green.vercel.app/sign-in' },
-    { name: 'Contact', icon: PhoneIcon, path: '/contact' }
+    { name: 'Interview Prep', icon: CalendarIcon, path: 'https://interview-prep-green.vercel.app/sign-in' }
   ];
 
   return (

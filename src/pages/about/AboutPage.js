@@ -153,8 +153,8 @@ const AboutPage = () => {
       </section>
 
       {/* Faculty Section */}
-      <section className={`relative overflow-hidden min-h-screen flex items-center ${isLight ? 'bg-transparent' : 'bg-[#030014]/50'}`}>
-        <div className="container mx-auto px-4 py-20 relative z-10">
+      <section className={`relative overflow-hidden py-20 ${isLight ? 'bg-transparent' : 'bg-[#030014]/50'}`}>
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -164,8 +164,8 @@ const AboutPage = () => {
           >
             <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${
               isLight 
-                ? 'bg-gradient-to-r from-violet-600 to-cyan-500 text-transparent bg-clip-text' 
-                : 'bg-gradient-to-r from-violet-400 to-cyan-400 text-transparent bg-clip-text'
+                ? 'text-indigo-700' 
+                : 'bg-gradient-to-r from-violet-300 to-cyan-300 text-transparent bg-clip-text'
             }`}>
               Our Faculty
             </h2>
@@ -174,109 +174,141 @@ const AboutPage = () => {
             </p>
           </motion.div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid gap-8 lg:grid-cols-2"
-          >
-            {/* Teaching Faculty */}
-            <motion.div
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Faculty 1 */}
+            <motion.div 
               variants={itemVariants}
-              className={`rounded-2xl p-8 transition-all duration-300 ${
+              className={`rounded-lg p-6 transition-all duration-300 ${
                 isLight 
                   ? 'bg-white/80 hover:bg-white shadow-lg hover:shadow-xl backdrop-blur-sm' 
-                  : 'bg-white/5 hover:bg-white/10 backdrop-blur-lg'
+                  : 'bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/5'
               }`}
             >
-              <h3 className={`text-2xl font-bold mb-6 ${
-                isLight ? 'text-violet-800' : 'text-violet-300'
-              }`}>Teaching Faculty</h3>
-              <div className="space-y-8">
-                <div className="flex items-start gap-6">
-                  <div className={`w-20 h-20 rounded-xl flex items-center justify-center ${
-                    isLight 
-                      ? 'bg-violet-100' 
-                      : 'bg-violet-900/30'
-                  }`}>
-                    <span className={`text-2xl font-bold ${
-                      isLight ? 'text-violet-600' : 'text-violet-300'
-                    }`}>DP</span>
-                  </div>
-                  <div>
-                    <h4 className={`text-xl font-semibold mb-2 ${
-                      isLight ? 'text-gray-900' : 'text-white'
-                    }`}>Dr. Pramod</h4>
-                    <p className={`mb-2 ${
-                      isLight ? 'text-gray-600' : 'text-gray-300'
-                    }`}>Associate Professor and Head of Department</p>
-                    <p className={`text-sm ${
-                      isLight ? 'text-gray-500' : 'text-gray-400'
-                    }`}>Contact: hodcsd@pestrust.edu.in</p>
-                    <p className={`text-sm ${
-                      isLight ? 'text-gray-500' : 'text-gray-400'
-                    }`}>Phone: 9886890174</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-6">
-                  <div className={`w-20 h-20 rounded-xl flex items-center justify-center ${
-                    isLight 
-                      ? 'bg-violet-100' 
-                      : 'bg-violet-900/30'
-                  }`}>
-                    <span className={`text-2xl font-bold ${
-                      isLight ? 'text-violet-600' : 'text-violet-300'
-                    }`}>AK</span>
-                  </div>
-                  <div>
-                    <h4 className={`text-xl font-semibold mb-2 ${
-                      isLight ? 'text-gray-900' : 'text-white'
-                    }`}>Mrs. Ayisha Khanum</h4>
-                    <p className={`mb-2 ${
-                      isLight ? 'text-gray-600' : 'text-gray-300'
-                    }`}>Assistant Professor</p>
-                    <p className={`text-sm ${
-                      isLight ? 'text-gray-500' : 'text-gray-400'
-                    }`}>Lab In-charge: Programming C LAB</p>
-                  </div>
-                </div>
-              </div>
+              <h3 className={`text-xl font-bold mb-2 ${
+                isLight 
+                  ? 'bg-gradient-to-r from-violet-600 to-cyan-500 text-transparent bg-clip-text' 
+                  : 'bg-gradient-to-r from-violet-400 to-cyan-400 text-transparent bg-clip-text'
+              }`}>
+                Dr. Pramod
+              </h3>
+              <p className="text-cyan-500 mb-3">Professor & HOD</p>
+              <p className="text-sm text-gray-400 mb-4">Ph.D. in Computer Science</p>
+              <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
+              <p className="text-sm text-gray-500">
+                <span className="block">Email: hodcsd@pestrust.edu.in</span>
+              </p>
             </motion.div>
 
-            {/* Non-Teaching Faculty */}
-            <motion.div
+            {/* Faculty 2 */}
+            <motion.div 
               variants={itemVariants}
-              className={`rounded-2xl p-8 transition-all duration-300 ${
+              className={`rounded-lg p-6 transition-all duration-300 ${
                 isLight 
                   ? 'bg-white/80 hover:bg-white shadow-lg hover:shadow-xl backdrop-blur-sm' 
-                  : 'bg-white/5 hover:bg-white/10 backdrop-blur-lg'
+                  : 'bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/5'
               }`}
             >
-              <h3 className={`text-2xl font-bold mb-6 ${
-                isLight ? 'text-cyan-800' : 'text-cyan-300'
-              }`}>Non-Teaching Faculty</h3>
-              <div className="flex items-start gap-6">
-                <div className={`w-20 h-20 rounded-xl flex items-center justify-center ${
-                  isLight 
-                    ? 'bg-cyan-100' 
-                    : 'bg-cyan-900/30'
-                }`}>
-                  <span className={`text-2xl font-bold ${
-                    isLight ? 'text-cyan-600' : 'text-cyan-300'
-                  }`}>SS</span>
-                </div>
-                <div>
-                  <h4 className={`text-xl font-semibold mb-2 ${
-                    isLight ? 'text-gray-900' : 'text-white'
-                  }`}>Mr. Shivakumar S V</h4>
-                  <p className={`mb-2 ${
-                    isLight ? 'text-gray-600' : 'text-gray-300'
-                  }`}>Lab Instructor</p>
-                </div>
-              </div>
+              <h3 className={`text-xl font-bold mb-2 ${
+                isLight 
+                  ? 'bg-gradient-to-r from-violet-600 to-cyan-500 text-transparent bg-clip-text' 
+                  : 'bg-gradient-to-r from-violet-400 to-cyan-400 text-transparent bg-clip-text'
+              }`}>Mrs. Ayisha Khanum</h3>
+              <p className="text-cyan-500 mb-3">Assistant Professor</p>
+              <p className="text-sm text-gray-400 mb-4">M.Tech in Computer Science</p>
+              <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
+              <p className="text-sm text-gray-500">
+                <span className="block">Email: ayisha.khanum@pestrust.edu.in</span>
+              </p>
             </motion.div>
-          </motion.div>
+
+            {/* Faculty 3 */}
+            <motion.div 
+              variants={itemVariants}
+              className={`rounded-lg p-6 transition-all duration-300 ${
+                isLight 
+                  ? 'bg-white/80 hover:bg-white shadow-lg hover:shadow-xl backdrop-blur-sm' 
+                  : 'bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/5'
+              }`}
+            >
+              <h3 className={`text-xl font-bold mb-2 ${
+                isLight 
+                  ? 'bg-gradient-to-r from-violet-600 to-cyan-500 text-transparent bg-clip-text' 
+                  : 'bg-gradient-to-r from-violet-400 to-cyan-400 text-transparent bg-clip-text'
+              }`}>Mr. Manjunatha G</h3>
+              <p className="text-cyan-500 mb-3">Assistant Professor</p>
+              <p className="text-sm text-gray-400 mb-4">M.Tech in Computer Science</p>
+              <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
+              <p className="text-sm text-gray-500">
+                <span className="block">Email: manjunatha.g@pestrust.edu.in</span>
+              </p>
+            </motion.div>
+
+            {/* Faculty 4 */}
+            <motion.div 
+              variants={itemVariants}
+              className={`rounded-lg p-6 transition-all duration-300 ${
+                isLight 
+                  ? 'bg-white/80 hover:bg-white shadow-lg hover:shadow-xl backdrop-blur-sm' 
+                  : 'bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/5'
+              }`}
+            >
+              <h3 className={`text-xl font-bold mb-2 ${
+                isLight 
+                  ? 'bg-gradient-to-r from-violet-600 to-cyan-500 text-transparent bg-clip-text' 
+                  : 'bg-gradient-to-r from-violet-400 to-cyan-400 text-transparent bg-clip-text'
+              }`}>Mrs. Kavya S</h3>
+              <p className="text-cyan-500 mb-3">Assistant Professor</p>
+              <p className="text-sm text-gray-400 mb-4">M.Tech in Computer Science</p>
+              <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
+              <p className="text-sm text-gray-500">
+                <span className="block">Email: kavya.s@pestrust.edu.in</span>
+              </p>
+            </motion.div>
+
+            {/* Faculty 5 */}
+            <motion.div 
+              variants={itemVariants}
+              className={`rounded-lg p-6 transition-all duration-300 ${
+                isLight 
+                  ? 'bg-white/80 hover:bg-white shadow-lg hover:shadow-xl backdrop-blur-sm' 
+                  : 'bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/5'
+              }`}
+            >
+              <h3 className={`text-xl font-bold mb-2 ${
+                isLight 
+                  ? 'bg-gradient-to-r from-violet-600 to-cyan-500 text-transparent bg-clip-text' 
+                  : 'bg-gradient-to-r from-violet-400 to-cyan-400 text-transparent bg-clip-text'
+              }`}>Mr. Harish M</h3>
+              <p className="text-cyan-500 mb-3">Assistant Professor</p>
+              <p className="text-sm text-gray-400 mb-4">M.Tech in Computer Science</p>
+              <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
+              <p className="text-sm text-gray-500">
+                <span className="block">Email: harish.m@pestrust.edu.in</span>
+              </p>
+            </motion.div>
+
+            {/* Non-Teaching Staff */}
+            <motion.div 
+              variants={itemVariants}
+              className={`rounded-lg p-6 transition-all duration-300 ${
+                isLight 
+                  ? 'bg-white/80 hover:bg-white shadow-lg hover:shadow-xl backdrop-blur-sm' 
+                  : 'bg-white/5 hover:bg-white/10 backdrop-blur-lg border border-white/5'
+              }`}
+            >
+              <h3 className={`text-xl font-bold mb-2 ${
+                isLight 
+                  ? 'bg-gradient-to-r from-amber-600 to-yellow-500 text-transparent bg-clip-text' 
+                  : 'bg-gradient-to-r from-amber-400 to-yellow-400 text-transparent bg-clip-text'
+              }`}>Mr. Shivakumar S V</h3>
+              <p className="text-amber-500 mb-3">Lab Instructor</p>
+              <p className="text-sm text-gray-400 mb-4">M.Tech in Computer Science</p>
+              <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 my-4"></div>
+              <p className="text-sm text-gray-500">
+                <span className="block">Email: shivakumar.sv@pestrust.edu.in</span>
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -317,73 +349,51 @@ const AboutPage = () => {
                   : 'bg-white/5 hover:bg-white/10 backdrop-blur-lg'
               }`}
             >
-              <h3 className={`text-2xl font-bold mb-6 ${
+              <h3 className={`text-2xl font-bold mb-6 text-center ${
                 isLight ? 'text-violet-800' : 'text-violet-300'
-              }`}>Programming C LAB</h3>
-              <div className="grid gap-8 md:grid-cols-2">
-                <div>
-                  <p className={`mb-4 ${
-                    isLight ? 'text-gray-600' : 'text-gray-300'
-                  }`}>
-                    <span className={`font-semibold ${
-                      isLight ? 'text-gray-900' : 'text-white'
-                    }`}>Lab In-charge:</span> Mrs. Ayisha Khanum
-                  </p>
-                  <p className={`mb-4 ${
-                    isLight ? 'text-gray-600' : 'text-gray-300'
-                  }`}>
-                    <span className={`font-semibold ${
-                      isLight ? 'text-gray-900' : 'text-white'
-                    }`}>Lab Area:</span> 180.27 SQ Meters
-                  </p>
-                </div>
-                <div>
+              }`}>Facilities</h3>
+              <div className="flex flex-col items-center">
+                <div className="text-center">
                   <h4 className={`text-lg font-semibold mb-4 ${
                     isLight ? 'text-gray-900' : 'text-white'
-                  }`}>Equipment Details:</h4>
-                  <ul className={`space-y-2 ${
+                  }`}>Computer Lab Equipment</h4>
+                  <ul className={`space-y-2 text-center ${
                     isLight ? 'text-gray-600' : 'text-gray-300'
                   }`}>
-                    <li className="flex items-center gap-2">
-                      <div className={`w-1.5 h-1.5 rounded-full ${
-                        isLight ? 'bg-violet-500' : 'bg-violet-400'
-                      }`} />
-                      ACER Desktop M200 Core 15-12th Generation
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className={`w-1.5 h-1.5 rounded-full ${
-                        isLight ? 'bg-violet-500' : 'bg-violet-400'
-                      }`} />
-                      8 GB RAM
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className={`w-1.5 h-1.5 rounded-full ${
-                        isLight ? 'bg-violet-500' : 'bg-violet-400'
-                      }`} />
-                      256 GB SSD
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className={`w-1.5 h-1.5 rounded-full ${
-                        isLight ? 'bg-violet-500' : 'bg-violet-400'
-                      }`} />
-                      1TB HDD
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className={`w-1.5 h-1.5 rounded-full ${
-                        isLight ? 'bg-violet-500' : 'bg-violet-400'
-                      }`} />
-                      20" TFT Monitor /DOS
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className={`w-1.5 h-1.5 rounded-full ${
-                        isLight ? 'bg-violet-500' : 'bg-violet-400'
-                      }`} />
-                      Networking Equipment
-                    </li>
-                  </ul>
-                </div>
+                  <li className="flex items-center gap-2">
+                    <div className={`w-1.5 h-1.5 rounded-full ${
+                      isLight ? 'bg-violet-500' : 'bg-violet-400'
+                    }`} />
+                    ACER Desktop M200 Core 15-12th Generation
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className={`w-1.5 h-1.5 rounded-full ${
+                      isLight ? 'bg-violet-500' : 'bg-violet-400'
+                    }`} />
+                    8 GB RAM
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className={`w-1.5 h-1.5 rounded-full ${
+                      isLight ? 'bg-violet-500' : 'bg-violet-400'
+                    }`} />
+                    256 GB SSD + 1TB HDD
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className={`w-1.5 h-1.5 rounded-full ${
+                      isLight ? 'bg-violet-500' : 'bg-violet-400'
+                    }`} />
+                    20" TFT Monitor
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className={`w-1.5 h-1.5 rounded-full ${
+                      isLight ? 'bg-violet-500' : 'bg-violet-400'
+                    }`} />
+                    Networking Equipment
+                  </li>
+                </ul>
               </div>
-            </motion.div>
+            </div>
+          </motion.div>
           </motion.div>
         </div>
       </section>
